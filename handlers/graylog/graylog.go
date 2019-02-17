@@ -55,7 +55,7 @@ func (h *Handler) HandleLog(e *log.Entry) error {
 	return nil
 }
 
-// Closes connection to server, flushing message queue.
+// Close: Closes connection to server, flushing message queue.
 func (h *Handler) Close() error {
 	return h.client.Close()
 }
